@@ -1,0 +1,115 @@
+import type { TopicContent } from "./types";
+
+export const intellectualProperty: TopicContent = {
+  slug: "intellectual-property",
+  hero:
+    "Intellectual property (IP) is the legal recognition that creative or intellectual work is a form of ownership. This module covers copyright, software licences, open source, plagiarism and DRM — the rules that decide who controls digital creations.",
+  tags: ["COPYRIGHT", "LICENCES", "OPEN SOURCE", "PLAGIARISM", "DRM"],
+  sections: [
+    {
+      id: "copyright",
+      code: "01",
+      title: "Copyright",
+      explanation:
+        "Copyright protects original works — text, music, art, software — automatically from the moment they are created. It gives the creator exclusive rights over how their work is used.",
+      bullets: [
+        "Applies to text, art, music, video, software and more.",
+        "Automatic — no registration needed.",
+        "Creator controls copying, distribution and adaptation.",
+        "Lasts decades (usually creator's lifetime + 70 years).",
+        "Using copyrighted work without permission is infringement.",
+        "Exceptions are narrow (criticism, review, limited education use).",
+        "Penalties: takedowns, fines, lawsuits.",
+      ],
+      paragraphs: [
+        "Copying a song into your own video without permission is infringement, even if you do not make money from it. Free-use exceptions exist — for criticism, review or limited education — but they are narrow and frequently misunderstood.",
+        "Platforms like YouTube enforce copyright at scale through automatic detection systems (e.g. Content ID), which fingerprint uploads against a database of protected works and issue takedowns or revenue claims.",
+      ],
+      quiz: [
+        { q: "Copyright begins when…", options: ["You register it", "The work is created", "You pay a fee", "It is published"], answer: 1, why: "Automatic on creation." },
+        { q: "Which is NOT typically covered by copyright?", options: ["Music", "Software", "Photos", "Ideas in your head"], answer: 3, why: "Ideas aren't protected, expressions are." },
+        { q: "Copyright typically lasts…", options: ["1 year", "10 years", "Lifetime + 70 years", "Forever"], answer: 2, why: "Standard duration." },
+        { q: "Using a song without permission is…", options: ["Always legal", "Often infringement", "Always free use", "Encryption"], answer: 1, why: "Infringement unless permitted." },
+        { q: "True/False: copyright is automatic.", options: ["True", "False"], answer: 0, why: "No registration needed." },
+        { q: "Possible copyright exception?", options: ["Criticism / limited education", "Anything personal", "All school projects", "All TikToks"], answer: 0, why: "Narrow exceptions." },
+        { q: "Copyright gives the creator…", options: ["Control over copying/distribution", "Power to tax others", "Permission to fly drones", "Right to make laws"], answer: 0, why: "Exclusive rights over use." },
+        { q: "Example of infringement?", options: ["Uploading someone else's film without permission", "Quoting one short line with credit", "Watching a film you bought", "Writing your own song"], answer: 0, why: "Re-upload is infringement." },
+        { q: "Platforms enforce copyright via…", options: ["Automatic detection systems", "Manual fans only", "Random scans", "Walkie-talkies"], answer: 0, why: "Content ID + similar." },
+        { q: "Infringement can lead to…", options: ["Takedowns, fines, lawsuits", "Free credits", "Better Wi-Fi", "Faster phones"], answer: 0, why: "Real penalties." },
+      ],
+    },
+    {
+      id: "licences",
+      code: "02",
+      title: "Software Licences",
+      explanation:
+        "Software licences set the legal terms under which software can be used, copied or modified. Different licences give very different rights and obligations.",
+      bullets: [
+        "Proprietary licence — use only, no changes allowed, source hidden.",
+        "Freeware — free to use but source code is hidden.",
+        "Shareware — free trial, pay to keep using.",
+        "Open-source — source code available, often free to modify.",
+        "Permissive licences (MIT, Apache) — almost no obligations.",
+        "Copyleft licences (GPL) — derivatives must use the same licence.",
+        "'Free to use' does NOT always mean 'free to copy and resell'.",
+      ],
+      paragraphs: [
+        "Proprietary licences (Windows, Photoshop) restrict installs, ban redistribution and hide the source code. Freeware (e.g. some utilities) lets you run the software for free but doesn't open the source. Shareware lets you try, then forces payment to continue.",
+        "Open source comes in two main flavours. Permissive licences (MIT) let you do almost anything — including using the code in proprietary, closed-source products. Copyleft licences (GPL) require that any modified versions you distribute must also be GPL — preserving openness down the chain.",
+      ],
+      quiz: [
+        { q: "Proprietary licences typically…", options: ["Hide source code and restrict use", "Are always free", "Force you to share changes", "Need government approval"], answer: 0, why: "Closed, restrictive." },
+        { q: "Freeware is…", options: ["Free to use, source hidden", "Open source", "Always shareware", "Always malware"], answer: 0, why: "Definition." },
+        { q: "Shareware is…", options: ["Free trial, pay to continue", "Permanent freeware", "Open source", "Adware"], answer: 0, why: "Trial-based." },
+        { q: "Open source means…", options: ["Source code is available", "Always free of charge", "Always copyleft", "Always proprietary"], answer: 0, why: "Source is open; terms vary." },
+        { q: "GPL is…", options: ["Copyleft licence", "Permissive licence", "Freeware-only", "Proprietary"], answer: 0, why: "Share-alike." },
+        { q: "MIT is…", options: ["Permissive licence", "Copyleft licence", "Closed source", "Shareware"], answer: 0, why: "Almost no obligations." },
+        { q: "'Free to use' always means 'free to resell'?", options: ["True", "False"], answer: 1, why: "Licences vary." },
+        { q: "Why read the licence?", options: ["To know what you can/can't do", "Required by Wi-Fi", "For fun", "Free apps"], answer: 0, why: "Legal obligations." },
+        { q: "Which is NOT a licence type?", options: ["Proprietary", "Freeware", "Shareware", "Sportsware"], answer: 3, why: "Not a real licence." },
+        { q: "Modifying code under copyleft typically requires…", options: ["Sharing modifications under the same licence", "Hiding source forever", "Paying royalties", "Nothing"], answer: 0, why: "Copyleft principle." },
+      ],
+    },
+    {
+      id: "plagiarism-drm",
+      code: "03",
+      title: "Plagiarism & DRM",
+      explanation:
+        "Plagiarism is presenting someone else's work as your own. DRM (Digital Rights Management) is a technical system used to prevent unauthorised copying and use of digital media.",
+      bullets: [
+        "Plagiarism = copying without credit, even with paraphrasing.",
+        "Consequences include failed work, expulsion, lost jobs and reputational damage.",
+        "Citing sources is the cure for plagiarism.",
+        "DRM = Digital Rights Management.",
+        "DRM controls how digital media can be played, copied or shared.",
+        "Examples: streaming services, copy-protected games, e-books.",
+        "DRM controversy: it can block legitimate uses (e.g. personal backups).",
+      ],
+      paragraphs: [
+        "Even AI-generated content needs careful sourcing to avoid passing off others' work as your own. Paraphrasing a paragraph from a website without citation is still plagiarism — the ideas and structure aren't yours.",
+        "DRM protects creators from piracy but also restricts what paying customers can do — for example, stopping you backing up a Blu-ray you legally own, or moving an e-book to a different reader. Critics argue it limits user rights over content they paid for.",
+      ],
+      quiz: [
+        { q: "Plagiarism is…", options: ["Presenting others' work as your own", "Legitimate research", "Paraphrasing with citation", "Creative writing"], answer: 0, why: "Uncredited use." },
+        { q: "Cure for plagiarism?", options: ["Cite sources clearly", "Copy faster", "Synonyms only", "Delete source"], answer: 0, why: "Proper attribution." },
+        { q: "DRM stands for…", options: ["Digital Rights Management", "Data Removal Method", "Disc Repair Mode", "Dynamic RAM"], answer: 0, why: "Standard expansion." },
+        { q: "DRM is used by…", options: ["Streaming services, games, e-books", "Postal workers", "Only one website", "Cookies only"], answer: 0, why: "Common across digital media." },
+        { q: "DRM downside?", options: ["Blocks legitimate uses (backups)", "Faster Wi-Fi", "Cheaper devices", "Free electricity"], answer: 0, why: "Restricts legal use." },
+        { q: "Paraphrasing without citation can be…", options: ["Plagiarism", "Always fine", "A new law", "Encryption"], answer: 0, why: "Source still needed." },
+        { q: "School penalty for plagiarism?", options: ["Marks lost, possible expulsion", "Free Wi-Fi", "A medal", "Promotion"], answer: 0, why: "Serious academic penalty." },
+        { q: "DRM tries to prevent…", options: ["Unauthorised copying/sharing", "Server downtime", "Battery drain", "Bugs"], answer: 0, why: "Anti-piracy purpose." },
+        { q: "Which is NOT an example of DRM?", options: ["Safe-cracker", "Streaming licence checks", "Copy-protected games", "E-book restrictions"], answer: 0, why: "Self-evident." },
+        { q: "Ethical concern with DRM?", options: ["Restricts user freedom over paid content", "Improves battery", "Faster phones", "Less e-waste"], answer: 0, why: "Limits legitimate rights." },
+      ],
+    },
+  ],
+  flashcards: [
+    { category: "COPYRIGHT", front: "Copyright", back: "Automatic legal protection for original works — exclusive rights for ~creator's life + 70 years." },
+    { category: "COPYRIGHT", front: "Copyright infringement", back: "Using protected work without permission — leads to takedowns, fines, lawsuits." },
+    { category: "LICENCES", front: "Licence types", back: "Proprietary, freeware, shareware, open-source (permissive vs copyleft)." },
+    { category: "LICENCES", front: "Copyleft vs permissive", back: "Copyleft (GPL) forces derivative works to share same licence; permissive (MIT) imposes almost no restrictions." },
+    { category: "PLAGIARISM", front: "Plagiarism", back: "Presenting someone else's work as your own — avoided by clear citation." },
+    { category: "DRM", front: "DRM", back: "Digital Rights Management — technical controls over how digital media can be played, copied or shared." },
+    { category: "DRM", front: "DRM controversy", back: "Protects creators but can also block legitimate uses (backups, format-shifting)." },
+  ],
+};
